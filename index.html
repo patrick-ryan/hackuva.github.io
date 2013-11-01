@@ -1,128 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Bootply.com - CapitalCity Template</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" type="text/css" rel="stylesheet">
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="/bootstrap/img/favicon.ico">
+        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
-<div class="navbar navbar-fixed-top navbar-blue" data-spy="affix" data-offset-top="1500">
- <div class="navbar-header">
+
+
+
+
+
+
+
+        <!-- CSS code from Bootply.com editor -->
+        
+        <style type="text/css">
+            /* -- custom css for Bootstrap 3.x --*/
+
+/* move special fonts to HTML head for better performance */
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family:Arial,sans-serif;
+}
+
+h1,h2,h3,h4,.lead,.btn {
+  text-transform:uppercase;
+  font-family:'Voltaire',Arial,sans-serif;
+  letter-spacing:2px;
+}
+
+h1 {
+  font-size:50px;
+}
+
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.icon-bar {
+   background-color:#fff;
+}
+
+.scroll-down a, .scroll-top a {
+   color:#ffffff;
+}
+
+.scroll-down {
+   position:fixed;
+   bottom:20%;
+   right:0%;
+   color:#f9f9f9;
+}
+
+.scroll-top {
+  background-color:#dbdbdb;
+}
+
+.header .btn-lg {
+   font-size:28px;
+   border-color:#eeeeee;
+   padding:15px;
+   background-color:transparent;
+   color:#ffffff;
+}
+
+.header .btn-lg:hover {
+   background-color:#eeeeee;
+   color:#777777;
+}
+
+.navbar a {
+  color:#fff;
+}
+
+.navbar-bold.affix {
+  background-color:#d46054;
+}
+
+.navbar-bold {
+  background-color:#f68076;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.navbar-bold li a:hover {
+  background-color:#d46054;
+}
+
+.navbar-bold li.active {
+  background-color:#e57165;
+}
+
+.vert {
+  vertical-align: middle;
+  width:100%;
+  padding-top:4%;
+  text-align:center;
+}
+
+.header h1 {
+  font-size:80px;
+  -webkit-text-stroke: 1px rgba(f,f,f,0.1);
+  color:#431a6d;
+  color:#fff;
+  margin-left:-5px;
+  margin-bottom:5px;
+  text-transform:uppercase;
+}
+
+.header .lead {
+  color:#d46054;
+  font-size:25px;
+}
+
+.header {
+  height: 80%;
+  background: #f68076 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
+}
+
+.blurb {
+  padding: 120px 0;
+  background-color:#fefefe;
+}
+
+.blurb .panel {
+  background-color:transparent;
+}
+
+.bright {
+  background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed; 
+  color:#777;
+}
+
+.featurette {
+  background: #222334;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.featurette-item {
+  margin-bottom: 15px;
+}
+
+.featurette-item > i {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.featurette-item > i:hover {
+  font-size: 68px;
+}
+
+.callout {
+  color: #ffffff;
+  padding-top:7%;
+  height: 100%;
+  width: 100%;
+  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+
+.call-to-action {
+  background: #eeeeee;
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+/* -- end custom css for Bootstrap 3.x --*/
+
+        </style>
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  >
+        
+        
+<div class="navbar navbar-fixed-top navbar-bold" data-spy="affix" data-offset-top="1000">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Home</a>
       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
     </div>
-    <div class="navbar-collapse collapse">
+    <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li><a href="#">Editor</a></li>
-        <li><a href="#">Community</a></li>
+        <li><a href="#sec1">Section 1</a></li>
+        <li><a href="#sec2">Section 2</a></li>
+        <li><a href="#sec3">Section 3</a></li>
+        <li><a href="#sec4">Section 4</a></li>
       </ul>
     </div>
+   </div>
 </div>
+
+<div class="header vert">
+  <div class="container">
     
-<div class="header">
-  <div class="vert">
-    <h1>Bootply</h1>
-    <h3>The Playground for Twitter Bootstrap</h3>
-    <br><br>
-    <a href="#intro" class="btn btn-primary btn-lg">Play Now</a>
+    <h1>CapitalCity</h1>
+      <p class="lead">Starter Template for Bootstrap</p>
+      <div>&nbsp;</div>
+      <a href="#" class="btn btn-default btn-lg">Get Started</a>
   </div>
 </div>
 
-<div class="blurb">
+<hr>
+
+<div id="sec1" class="blurb">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h2>The Simplicity of Hand-coding Meets the Power of Responsive Design</h2>
-        <p class="lead">Once upon a time there was a great frontend framework the provided a kickstart for responsive Websites.</p>
+      <div class="col-md-7">
+        <h1>The Simplicity of Bootstrap</h1>
+        <p class="lead">The Most Popular Responsive Framwork</p>
+      </div>
+      <div class="col-md-5">
+        <h1 class="pull-right"><i class="icon-mobile-phone icon-3x"></i> <i class="icon-tablet icon-3x"></i> <i class="icon-laptop icon-3x"></i></h1>
       </div>
     </div>
   </div>
 </div>
 
-<div class="featurette">
+<div class="featurette" id="sec2">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-md-offset-4 text-center">
-        <h2></h2>
+      <div class="col-md-12 text-center">
+        <h1>Amazing Features</h1>
       </div>
     </div>
     <div class="row">
       <div class="col-md-2 col-md-offset-2 text-center">
         <div class="featurette-item">
           <i class="icon-rocket"></i>
-          <h4>Design</h4>
-          <p>Leverage the most popular frontend framework for responsive design.</p>
+          <h4>Rocket</h4>
+          <p>Up-up-and-away with this starter template.</p>
         </div>
       </div>
       <div class="col-md-2 text-center">
         <div class="featurette-item">
           <i class="icon-magnet"></i>
-          <h4>Prototype</h4>
-          <p>Rapidly create and preview mockups right in your browser.</p>
+          <h4>Magnet</h4>
+          <p>For you are a magnet and I am steel.</p>
         </div>
       </div>
       <div class="col-md-2 text-center">
         <div class="featurette-item">
           <i class="icon-shield"></i>
-          <h4>Test</h4>
-          <p>Booply makes it easier to tweak and troubleshoot Bootstrap HTML, CSS and Javascript.</p>
+          <h4>Shield</h4>
+          <p>Protect yourself. Don't design like it's 1999.</p>
         </div>
       </div>
       <div class="col-md-2 text-center">
         <div class="featurette-item">
           <i class="icon-pencil"></i>
-          <h4>Build</h4>
-          <p>Hand-coding or drag-and-drop, Bootply is the simplest way to build with Bootstrap.</p>
+          <h4>Scholar</h4>
+          <p>Because lead pencils are pretty smart looking.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="callout">
+<div class="callout" id="sec3">
   <div class="vert">
-    
-    <div class="col-md-8 col-md-offset-2">
-    
-      <h2 class="text-center">15,000 Designers + Developers Use Bootply</h2>
-      <br>
+    <div class="col-md-12 text-center"><h2>Sometimes People Are Cool</h2></div>
+    <div class="col-md-12 text-center">&nbsp;</div>
+    <div class="col-md-8 col-md-offset-2 text-center">
       <div class="row hidden-xs">
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/ff202366ed8fe5406f39a0b1a7b75c9e?s=80"></div>
        <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/5c708a2c9d25d1f2e4195ece1f1c684d?s=80"></div>
        <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/3bb38f66f79ca138f318af89fe6b02ec?s=80"></div>
        <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/3423a3e32fda92a5aaed72c7cde3849c?s=80"></div>
        <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/325b6c3c0a75bfdb72822035bb556826?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/175a9b5c778ec21b4e64fe40da58d926?s=80"></div>
-      </div>
-      <br>
-      <div class="row hidden-xs">
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/c9411e85fea9974da09a865514c93cbf?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/37c625d758288ffdd727e2d37eff472f?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/2c5668a4e7b21d2e23e3ebbdec5ee26e?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/f135cb3a421d639c65260318becd8394?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/bd97d52d8689e9c69c6b3db55e9f0c19?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/ce39578fd1e5dbeaa44712d3bc55bc95?s=80"></div>
-      </div>
-      <br>
-      <div class="row hidden-xs">
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/746b421df3e10f2bd819111e9eae2efe?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/7c156a0f3a8f684cd5d8acc9eef97fde?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/bf68876b68221186e65a0848c2c37b7c?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/42b0c2a4569a0ad084169606c650a64d?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/e1e600b7bd907cf4ab9557042f62831b?s=80"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/b26cb2e053c676e9e3f93520b3fadb0d?s=80"></div>
-      </div>
-      
+       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/cdd69340b0cfac4c7acb892e3ea7556e?s=80"></div>  
+       <div class="col-sm-2"><img class="img-circle grayscale" src="http://www.gravatar.com/avatar/889778901fb1522dac2846ffe62bd960?s=80"></div>
+     </div>
     </div>
   </div>
 </div>
 
-<br>
+<div class="blurb" id="sec4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Is That An iPhone?</h1>
+        <img src="/assets/example/bg_smartphones.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
 
 <div class="gallery">
   
   <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <h5 title="Bootply has snippets galore!">Bootstrap Example Code</h5>
-        <h1>Leverage 1000's of Ready-to-Use Snippets</h1>
+        <h5>This Template is Responsive</h5>
+        <h2>Features Galore</h2>
         <br>
       </div>
   </div>
@@ -210,13 +424,66 @@
 <div class="blurb">
   <div class="container">
     <div class="row">
+      <div class="col-md-5">
+        <h1><i class="icon-mobile-phone icon-3x"></i> <i class="icon-tablet icon-3x"></i> <i class="icon-laptop icon-3x"></i></h1>
+      </div>
+      <div class="col-md-7">
+        <h1 class="pull-right">Kickstart Your Web Design</h1>
+        <p class="lead pull-right">With this Responsive Bootstrap Template</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="blurb bright">
+  
+  <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <h1>Sharing the Bootstrap Love</h1>
+        <h3>Smashing Heading</h3>
+        <br>
+      </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-2">
+         <div class="panel panel-default">
+         <div class="panel-heading text-center"><h2><i class="icon-chevron-left"></i> Left</h2></div>
+         <div class="panel-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+          Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+          dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+          Aliquam in felis si.
+            <div class="row">&nbsp;</div>
+          <button class="btn btn-lg btn-primary btn-block">Login</button> 
+          </div>
+         </div>
+ 	</div>
+    <div class="col-sm-4">
+         <div class="panel panel-default">
+         <div class="panel-heading text-center"><h2>Right <i class="icon-chevron-right"></i></h2></div>
+         <div class="panel-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+          Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+          dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+          Aliquam in felis sit amet.
+           <div class="row">&nbsp;</div>
+          <button class="btn btn-lg btn-primary btn-block">Sign Up</button> 
+           
+          </div>
+         </div>
+ 	</div>
+  </div>
+</div>
+
+<div class="blurb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <h3>Sharing the Bootstrap Love</h3>
         <p class="lead"></p>
       </div>
     </div>
   </div>
 </div>
+
 
 <footer>
   <div class="container">
@@ -229,13 +496,50 @@
           <li><i class="icon-pinterest icon-2x"></i></li>
         </ul>
         <hr>
-        <p>©Company 2013</p>
+        <p>Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a>.<br>Company ©2013</p>
       </div>
     </div>
   </div>
 </footer>
 
+<ul class="nav pull-right scroll-down">
+  <li><a href="#" title="Scroll down"><i class="icon-chevron-down icon-3x"></i></a></li>
+</ul>
 <ul class="nav pull-right scroll-top">
   <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
 </ul>
 
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+
+        
+        <!-- JavaScript jQuery code from Bootply.com editor -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            /* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+  $('body,html').animate({scrollTop:0},800);
+})
+/* smooth scrolling for scroll down */
+$('.scroll-down').click(function(){
+  $('body,html').animate({scrollTop:$(window).scrollTop()+800},1000);
+})
+
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#navbar' })
+
+        
+        });
+        
+        </script>
+        
+    </body>
+</html>
