@@ -39,14 +39,29 @@ body {
   font-family:Arial,sans-serif;
 }
 
-h1,h2,h3,h4,.lead,.btn {
-  text-transform:uppercase;
+h2,h3,h4,h5,h6,.lead,.btn {
   font-family:'Voltaire',Arial,sans-serif;
   letter-spacing:2px;
 }
 
 h1 {
-  font-size:50px;
+  text-transform:uppercase;
+  font-family:'Voltaire',Arial,sans-serif;
+  letter-spacing:2px; 
+}
+
+h5 {
+  width:450px;
+  border:5px ridge black;
+  background-image:url('http://www.hdwallpapersarena.com/wp-content/uploads/2012/07/55870.jpg');
+  padding:0px;
+}
+
+h6 {
+  width:300px;
+  border:1px solid black;
+  background-color:#ffffff;
+  padding:0px;
 }
 
 img.grayscale {
@@ -80,6 +95,7 @@ img.grayscale {
    padding:15px;
    background-color:#ffffff;
    color:#000000;
+   text-transform:uppercase;
 }
 
 .header .btn-lg:hover {
@@ -115,19 +131,25 @@ img.grayscale {
   text-align:center;
 }
 
-.header h1 {
+.header h5 {
   font-size:80px;
   -webkit-text-stroke: 1px rgba(f,f,f,0.1);
   color:#431a6d;
   color:#000;
-  margin-left:-5px;
-  margin-bottom:5px;
-  text-transform:uppercase;
+  margin-left:350px;
 }
 
 .header .lead {
   color:#d46054;
   font-size:25px;
+  text-transform:uppercase;
+}
+
+.header h6 {
+  color:#d46054;
+  font-size:25px;
+  text-transform:uppercase;
+  margin-left:420px;
 }
 
 .header {
@@ -186,7 +208,7 @@ img.grayscale {
   /*padding-top:7%;*/
   height: 75%;
   width: 100%;
-  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  background: url('http://content.wallpapers-room.com/resolutions/1920x1200/s/Wallpapers-room_com___simple_wall_glass_by_lassekongo83_1920x1200.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -243,9 +265,10 @@ footer {
 
 <div class="header vert">
   <div class="container" img src="../img/hackva_VA.png">
-    
-    <h1>HackVirginia</h1>
-      <p class="lead">Hackathon for A Cause</p>
+    <br>
+    <br>
+    <h5>HackVirginia</h5>
+      <h6>Hackathon for A Cause</h6>
       <div>&nbsp;</div>
       <a href="http://hackvirginia.eventbrite.com" class="btn btn-default btn-lg">
           Register</a>
@@ -327,7 +350,7 @@ footer {
     <div class="col-md-12 text-center"><h2> Bronze Sponsors</h2></div>
     <div class="col-md-8 col-md-offset-2 text-center">
       <div class="row hidden-xs">
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>
+       <div class="col-sm-2"><img style="background-color:#6495ed;" src="http://www.yext-static.com/cms/d758969c-d010-440a-91a4-97a4cecbe146.jpg" width="125" height="125"></div>
        <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
        <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
        <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
@@ -354,10 +377,9 @@ footer {
          <div class="panel-body">
             Start: <b>November 22</b><br>
             End:   <b>November 23</b><br>
-            Location: University of Virginia<br>
+            Location: Clemons library, University of Virginia<br>
             <br>
             <i>More details to come!</i>
-            <div class="row">&nbsp;</div>
           </div>
          </div>
  	</div>
@@ -367,7 +389,6 @@ footer {
          <div class="panel-body text-center">
             Interested in sponsoring?<br>
             Just send an email to hackvirginia@virginia.edu!
-           <div class="row">&nbsp;</div>
           </div>
          </div>
  	</div>
@@ -378,7 +399,6 @@ footer {
          <div class="panel-heading text-center"><h2><i class="icon-chevron-left"></i> Teams</h2></div>
          <div class="panel-body text-center">
             You may work with anyone! - as long as your team size doesn't go above 5 participants, then you can recruit anyone who has registered. We encourage you to reach out to your fellow hackers from other schools, as this is a great opportunity to make new friends and participate in a unique collaborative experience.
-            <div class="row">&nbsp;</div>
           </div>
          </div>
   </div>
@@ -386,11 +406,11 @@ footer {
          <div class="panel panel-default">
          <div class="panel-heading text-center"><h2>Schedule <i class="icon-chevron-right"></i></h2></div>
          <div class="panel-body schedule">
-          [Friday, 4:00pm]      Registration
-          [Friday, 6:00pm]      Start
-          [Saturday, 6:00pm]  Finish
-          [Saturday, 8:00pm]  Judging
-           <div class="row">&nbsp;</div>
+          Friday, 4:00pm -      Registration
+          Friday, 6:00pm -      Start
+          Saturday, 6:00pm -  Finish
+          Saturday, 8:00pm -  Judging
+           
           </div>
          </div>
   </div>
@@ -401,7 +421,6 @@ footer {
          <div class="panel-heading text-center"><h2><i class="icon-chevron-left"></i> Theme</h2></div>
          <div class="panel-body text-center">
             Software that makes a difference in the community.
-            <div class="row">&nbsp;</div>
           </div>
          </div>
   </div>
@@ -410,10 +429,9 @@ footer {
       <div class="panel-heading text-center"><h2>Things to bring <i class="icon-chevron-right"></i></h2></div>
       <div class="panel-body">
         1)  Yourself (<i>required</i>)<br>
-        2)  Laptops (<i>pretty useful</i>)<br>
+        2)  Laptops + chargers (<i>pretty useful</i>)<br>
         3)  Ethernet cables (<i>optional – WIFI will be available</i>)<br>
         4)  Sleeping supplies (<i>optional – who needs to sleep anyway?</i>)
-        <div class="row">&nbsp;</div>
       </div>
     </div>
   </div>
@@ -426,8 +444,7 @@ footer {
         <h1>Contact Us</h1>
         <h3>Any questions/suggestions/comments?</h3>
         <h3>Shoot us an email <h3>
-        <h3>and we'll be sure to get back to you</h3>     
-      <div class="row">&nbsp;</div>
+        <h3>and we'll be sure to get back to you</h3>
         <a href="mailto:hackvirginia@virginia.edu" class="btn btn-default btn-lg">Email</a>
         <p class="lead"></p>
       </div>
