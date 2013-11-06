@@ -37,6 +37,8 @@ body {
   height: 100%;
   width: 100%;
   font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
 }
 
 h1,h2,h3,h4,h5,h6,.lead,.btn {
@@ -45,7 +47,12 @@ h1,h2,h3,h4,h5,h6,.lead,.btn {
 }
 
 h1 {
+  font-size:35px;
   text-transform:uppercase;
+}
+
+h2 {
+  margin-bottom:20px;
 }
 
 h5 {
@@ -55,6 +62,7 @@ h5 {
   width:450px;
   margin-left:auto;
   margin-right:auto;
+  margin-top:200px;
 
   border:5px ridge black;
   background-image:url('http://www.hdwallpapersarena.com/wp-content/uploads/2012/07/55870.jpg');
@@ -105,16 +113,10 @@ img.grayscale {
 
 .header .btn-lg {
    font-size:28px;
-   border-color:#eeeeee;
-   padding:15px;
-   background-color:#ffffff;
-   color:#000000;
    text-transform:uppercase;
-}
-
-.header .btn-lg:hover {
-   background-color:#eeeeee;
-   color:#777777;
+   color:#000000;
+   background-color:#ffffff;
+   padding:15px;
 }
 
 .navbar a {
@@ -142,7 +144,6 @@ img.grayscale {
   vertical-align: middle;
   width:100%;
   padding-top:2%;
-  text-align:center;
 }
 
 .header .lead {
@@ -156,7 +157,9 @@ img.grayscale {
 }
 
 .header {
+  text-align: center;
   height: 80%;
+  width: 100%;
   background: #f68076 url('http://www.mindingthecampus.com/originals/University_of_Virginia_Rotunda_20061.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -169,8 +172,8 @@ img.grayscale {
 }
 
 .blurb {
-  padding: 20px 0;
   background-color:#fefefe;
+  padding: 20px 0;
  /* background: #fef url('img/hackva_VA.png')
   repeat center center fixed;*/
 }
@@ -180,8 +183,8 @@ img.grayscale {
 }
 
 .info-block {
-  width:350px;
   height:250px;
+  width:350px;
   border:0px solid black;
   background-color:#dddddd;
   padding:25px;
@@ -224,6 +227,7 @@ img.grayscale {
 }
 
 .callout {
+  text-align: center;
   color: #ffffff;
   /*padding-top:7%;*/
   height: 75%;
@@ -236,7 +240,11 @@ img.grayscale {
 }
 
 .gallery {
-  padding: 50px 0;
+  width:80%;
+  margin-top:10px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .call-to-action {
@@ -259,8 +267,8 @@ footer {
     
     <!-- HTML code from Bootply.com editor -->
     
-    <body  >
-        
+    <body>
+    
         
 <div class="navbar navbar-fixed-top navbar-bold" data-spy="affix" data-offset-top="1000">
   <div class="container">
@@ -283,16 +291,8 @@ footer {
    </div>
 </div>
 
-<div class="header vert">
+<div class="header">
   <div class="container" img src="../img/hackva_VA.png">
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
     <h5>HackVirginia</h5>
     <h6>Hackathon for A Cause</h6>
     <div>&nbsp;</div>
@@ -346,7 +346,6 @@ footer {
         <h1>Our Sponsors</h1>
       </div>
     <div class="col-md-12 text-center"><h2>Gold Sponsors</h2></div>
-    <div>&nbsp;</div>
     </div>
     <div class="row">
       <div class="col-md-3 text-center">
@@ -379,33 +378,47 @@ footer {
 
 <div class="callout">
   <div class="vert">
-    <div class="col-md-12 text-center"><h2>Silver Sponsors</h2></div>
-    <div>&nbsp;</div>
-    <div class="col-md-10 col-md-offset-2 text-center">
-      <div class="row hidden-xs">
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div> 
-           <div class="row hidden-xlg">&nbsp;</div>
-           <div class="row">&nbsp;</div>
-           <div class="row">&nbsp;</div>    
-       </div>
+    <div class="row"><h2>Silver Sponsors</h2></div>
+    <div class="row gallery">
+     <div class="col-md-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>
+     <div class="col-md-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>       
+     <div class="col-md-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>       
+     <div class="col-md-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>       
+     <div class="col-md-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>
     </div>
   </div>
+
   <div class="vert">
-    <div class="col-md-12 text-center"><h2> Bronze Sponsors</h2></div>
-    <div>&nbsp;</div>
-    <div class="col-md-8 col-md-offset-2 text-center">
-      <div class="row hidden-xs">
-       <div class="col-sm-2"><a href="http://www.pj-networks.com/"><img src="http://www.yext-static.com/cms/d758969c-d010-440a-91a4-97a4cecbe146.jpg" width="125" height="125"></a></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>     
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>    
-       </div>
+    <div class="row"><h2>Bronze Sponsors</h2></div>
+    <div class="row gallery">
+     <div class="col-sm-2">
+      <a href="http://www.pj-networks.com/"><img src="http://www.yext-static.com/cms/d758969c-d010-440a-91a4-97a4cecbe146.jpg" width="125" height="125"></a>
+     </div>
+     <div class="col-sm-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>       
+     <div class="col-sm-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>       
+     <div class="col-sm-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>       
+     <div class="col-sm-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>     
+     <div class="col-sm-2">
+      <img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg">
+     </div>    
     </div>
   </div>
 </div>
