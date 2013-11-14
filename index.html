@@ -455,10 +455,11 @@ a:focus {
   <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
 </ul>
 
+
 <script>
 var isMobile = navigator.userAgent.match(/Mobile/i) != null;
 if (isMobile) {
-    $("#title").attr("width", "80%");
+    $("img[id='title']").prop("width", "80%");
 }
 </script>
 
