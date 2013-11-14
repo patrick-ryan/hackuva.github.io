@@ -407,7 +407,7 @@ a:focus {
     <div>&nbsp;</div>
     <div class="row">
       <div class="col-md-6">
-        <a href="https://github.com/"><img src="img/Github logo.jpg" width="250" height="100"></a>
+        <a href="https://github.com/"><img src="img/Github logo-adapted.png" width="250" height="125"></a>
       </div>
       <div class="col-md-6">
         <a href="http://www.pj-networks.com/"><img src="img/pjn-logo-clean-600.jpg" width="250" height="125"></a>
@@ -454,6 +454,13 @@ a:focus {
 <ul class="nav pull-right scroll-top">
   <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
 </ul>
+
+<script>
+var isMobile = navigator.userAgent.match(/Mobile/i) != null;
+if (isMobile) {
+    $("#title").attr("width", "80%");
+}
+</script>
 
         
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
