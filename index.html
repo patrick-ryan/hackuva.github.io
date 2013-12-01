@@ -15,12 +15,8 @@
         <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
-
-
-
-
+        <link href="font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
 
 
@@ -31,22 +27,164 @@
 
 /* move special fonts to HTML head for better performance */
 @import url(http://fonts.googleapis.com/css?family=Voltaire);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-family:Arial,sans-serif;
+  height:100%;
+  width:100%;
+  margin:0px;
+  padding:0px;
 }
 
-h1,h2,h3,h4,.lead,.btn {
-  text-transform:uppercase;
-  font-family:'Voltaire',Arial,sans-serif;
+h1,h2,h3,h4,h5,h6 {
+  font-family:'Releway',Arial,sans-serif;
   letter-spacing:2px;
 }
 
+/*Title: HackVirginia*/
 h1 {
-  font-size:50px;
+  font-size:80px;
+  -webkit-text-stroke:1px rgba(f,f,f,0.1);
+  color:#000000;
+  width:40%;
+  margin-left:auto;
+  margin-right:auto;
+
+  border:5px ridge black;
+  background-image:url('img/title back.jpg');
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+/*Subtitle: Hackathon for a cause*/
+h2 {
+  font-size:20px;
+  text-transform:uppercase;
+  color:#fff;
+  margin-left:auto;
+  margin-right:auto;
+  padding:15px;
+
+}
+
+/*Blurb headings*/
+h3 {
+  font-size:20px;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+/*Overview, Sponsorship heading, FAQ heading, Contact heading*/
+h4 {
+  font-size:40px;
+}
+
+/*FAQ subheadings*/
+h5 {
+  font-size:25px;
+  text-transform:uppercase;
+}
+
+/*Contact content*/
+h6 {
+  font-size:20px;
+}
+
+.header {
+  text-align:center;
+  width:100%;
+  background:url('img/uva_bg_1.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn {
+  font-size: 25px;
+  font-family: 'Voltaire',Arial,sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #333;
+  min-width: 140px;
+  border-radius: 30px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  background-color:#fff;
+  text-decoration: none;
+}
+
+.blurb {
+  background-color:#ffffff;
+  padding:25px;
+}
+
+.info-block {
+  height:200px;
+  width:350px;
+  background-color:#dddddd;
+  padding:5px 20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.pic-block {
+  text-align:center;
+}
+
+footer {
+  background: #fff; 
+  padding:25px;
+}
+
+.sponsorship {
+  color:#333;
+  text-align:center;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-left:0px;
+  padding-right:50px;
+}
+
+.faq {
+  text-align:center;
+  color:#ffffff;
+}
+
+.panel {
+  min-height:235px;
+  background-color:#f5f5f5;
+}
+
+.panel-notdefault > .panel-heading {
+color: #f5f5f5;
+background-color: #333;
+border-color: #dddddd;
+}
+
+.contact {
+  background-color:#fefefe;
+  padding:20px 0;
+  margin-bottom: 50px;
+}
+
+.c-btn {
+  font-size:25px;
+  color:#333;
+  background-color:#FCB040;
+}
+
+.c-btn:hover,
+.c-btn:focus {
+  color: #333333;
+  background-color:#DE7527;
+  text-decoration: none;
 }
 
 img.grayscale {
@@ -74,140 +212,37 @@ img.grayscale {
   background-color:#dbdbdb;
 }
 
-.header .btn-lg {
-   font-size:28px;
-   border-color:#eeeeee;
-   padding:15px;
-   background-color:transparent;
-   color:#ffffff;
-}
-
-.header .btn-lg:hover {
-   background-color:#eeeeee;
-   color:#777777;
-}
-
 .navbar a {
   color:#fff;
 }
 
 .navbar-bold.affix {
-  background-color:#d46054;
+  background-color:#666666;
 }
 
 .navbar-bold {
-  background-color:#f68076;
+  background-color:#353032;
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .navbar-bold li a:hover {
-  background-color:#d46054;
+  background-color:#FCB040;
 }
 
 .navbar-bold li.active {
-  background-color:#e57165;
+  background-color:#FCB040;
 }
 
-.vert {
-  vertical-align: middle;
-  width:100%;
-  padding-top:4%;
-  text-align:center;
+
+a {
+  color: #FCB040;
+  text-decoration: none;
 }
 
-.header h1 {
-  font-size:80px;
-  -webkit-text-stroke: 1px rgba(f,f,f,0.1);
-  color:#431a6d;
-  color:#fff;
-  margin-left:-5px;
-  margin-bottom:5px;
-  text-transform:uppercase;
-}
-
-.header .lead {
-  color:#d46054;
-  font-size:25px;
-}
-
-.header {
-  height: 80%;
-  background: #f68076 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
-}
-
-.blurb {
-  padding: 120px 0;
-  background-color:#fefefe;
- /* background: #fef url('img/hackva_VA.png')
-  repeat center center fixed;*/
-}
-
-.blurb .panel {
-  background-color:transparent;
-}
-
-.schedule {
-  white-space: pre;
-}
-
-.bright {
-  background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed; 
-  color:#777;
-}
-
-.featurette {
-  background: #222334;
-  padding: 50px 0;
-  color: #ffffff;
-}
-
-.featurette-item {
-  margin-bottom: 15px;
-}
-
-.featurette-item > i {
-  border: 3px solid #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 56px;
-  width: 140px;
-  height: 140px;
-  line-height: 136px;
-  vertical-align: middle; 
-  text-align: center;
-}
-
-.featurette-item > i:hover {
-  font-size: 68px;
-}
-
-.callout {
-  color: #ffffff;
-  /*padding-top:7%;*/
-  height: 75%;
-  width: 100%;
-  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.gallery {
-  padding: 50px 0;
-}
-
-.call-to-action {
-  background: #eeeeee;
-  padding: 50px 0;
-}
-
-.call-to-action .btn {
-  margin: 10px;
-}
-
-footer {
-  padding: 100px 0;
+a:hover,
+a:focus {
+  color: #DE7527;
+  text-decoration: underline;
 }
 
 /* -- end custom css for Bootstrap 3.x --*/
@@ -216,9 +251,8 @@ footer {
     </head>
     
     <!-- HTML code from Bootply.com editor -->
+<body>
     
-    <body  >
-        
         
 <div class="navbar navbar-fixed-top navbar-bold" data-spy="affix" data-offset-top="1000">
   <div class="container">
@@ -232,224 +266,187 @@ footer {
     </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li><a href="#sec1">About</a></li>
-        <li><a href="#sec3">FAQ</a></li>
-        <li><a href="#sec2">Travel</a></li>
-        <li><a href="#sec4">Contact</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#sec1">Contact</a></li>
+        <!-- <li><a href="#sec2">FAQ</a></li> -->
+        <!-- <li><a href="#sec3">Travel</a></li> -->
       </ul>
     </div>
    </div>
 </div>
 
-<div class="header vert">
-  <div class="container" img src="../img/hackva_VA.png">
-    
-    <h1>HackVirginia</h1>
-      <p class="lead">Hackathon for A Cause</p>
-      <div>&nbsp;</div>
-      <a href="http://hackvirginia.eventbrite.com" class="btn btn-default btn-lg">
-          Register</a>
-      <a href="#sec6" class="btn btn-default btn-lg">Sponsor</a>
-  </div>
-</div>
-
-<hr>
-
-<div id="sec1" class="blurb">
+<div class="header" style="padding:60px 0px;">
   <div class="container">
     <div class="row">
-      <div class="col-md-7">
-        <h1>24 Hours ... </h1>
-        <p class="lead">Build Something Cool</p>
-        <p class="lead">100+ Students descend onto Charlottesville</p>
-      </div>
-      <div class="col-md-5">
-        <h1 class="pull-right"><i class="icon-mobile-phone icon-3x"></i> <i class="icon-tablet icon-3x"></i> <i class="icon-laptop icon-3x"></i></h1>
-      </div>
+      <img id="title" src="img/hackva_logo1.png" width="60%">
+      <h2>Hackathon for A Cause</h2>
+      <a href="http://hackvirginia.eventbrite.com" class="btn c-btn">Register</a>
+      <a href="./about.html#sec1" class="btn">Sponsor</a>
     </div>
   </div>
 </div>
 
-<div class="featurette" id="sec5">
-  <div class="container">
-    <div class="row">
-      <div id ="sec5" class="col-md-12 text-center">
-        <h1>Our Sponsors</h1>
-      </div>
-    <div class="col-md-12 text-center"><h2>Gold Sponsors</h2></div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 text-center">
-        <div class="featurette-item">
-          <i class="icon-rocket"></i>
-          <h4>Sponsor</h4>
-        </div>
-      </div>
-      <div class="col-md-3 text-center">
-        <div class="featurette-item">
-          <i class="icon-magnet"></i>
-          <h4>Sponsor</h4>
-        </div>
-      </div>
-      <div class="col-md-3 text-center">
-        <div class="featurette-item">
-          <i class="icon-shield"></i>
-          <h4>Sponsor</h4>
-        </div>
-      </div>
-      <div class="col-md-3 text-center">
-        <div class="featurette-item">
-          <i class="icon-pencil"></i>
-          <h4>Sponsor</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="callout">
-  <div class="vert">
-    <div class="col-md-12 text-center"><h2>Silver Sponsors</h2></div>
-    <div class="col-md-10 col-md-offset-2 text-center">
-      <div class="row hidden-xs">
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div> 
-           <div class="row hidden-xlg">&nbsp;</div>
-           <div class="row">&nbsp;</div>
-           <div class="row">&nbsp;</div>    
-       </div>
-    </div>
-  </div>
-  <div class="vert">
-    <div class="col-md-12 text-center"><h2> Bronze Sponsors</h2></div>
-    <div class="col-md-8 col-md-offset-2 text-center">
-      <div class="row hidden-xs">
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>       
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>     
-       <div class="col-sm-2"><img class="img-circle grayscale" style="background-color:#6495ed;" src="img/a_angelini.svg"></div>    
-       </div>
-    </div>
-  </div>
-</div>
-
-<div class="blurb bright" id="sec3">
-  
+<div class="blurb" style="background: url('img/stripe.png') repeat center center fixed; ">
   <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h3>FAQ: Frequently Asked Questions</h3>
-        <br>
-      </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-2">
-         <div class="panel panel-default">
-         <div class="panel-heading text-center"><h2><i class="icon-chevron-left"></i> Setting</h2></div>
-         <div class="panel-body">
-            Start: <b>November 22</b><br>
-            End:   <b>November 23</b><br>
-            Location: University of Virginia<br>
-            <br>
-            <i>More details to come!</i>
-            <div class="row">&nbsp;</div>
-          </div>
-         </div>
- 	</div>
-    <div class="col-sm-4">
-         <div class="panel panel-default">
-         <div id="sec6" class="panel-heading text-center"><h2>Sponsor <i class="icon-chevron-right"></i></h2></div>
-         <div class="panel-body text-center">
-            Interested in sponsoring?<br>
-            Just send an email to hackvirginia@virginia.edu!
-           <div class="row">&nbsp;</div>
-          </div>
-         </div>
- 	</div>
- </div>
-  <div id="sec2" class="row">
-    <div class="col-sm-4 col-sm-offset-2">
-         <div class="panel panel-default">
-         <div class="panel-heading text-center"><h2><i class="icon-chevron-left"></i> Teams</h2></div>
-         <div class="panel-body text-center">
-            You may work with anyone! - as long as your team size doesn't go above 5 participants, then you can recruit anyone who has registered. We encourage you to reach out to your fellow hackers from other schools, as this is a great opportunity to make new friends and participate in a unique collaborative experience.
-            <div class="row">&nbsp;</div>
-          </div>
-         </div>
-  </div>
-    <div class="col-sm-4">
-         <div class="panel panel-default">
-         <div class="panel-heading text-center"><h2>Schedule <i class="icon-chevron-right"></i></h2></div>
-         <div class="panel-body schedule">
-          [Friday, 4:00pm]      Registration
-          [Friday, 6:00pm]      Start
-          [Saturday, 6:00pm]  Finish
-          [Saturday, 8:00pm]  Judging
-           <div class="row">&nbsp;</div>
-          </div>
-         </div>
-  </div>
-</div>
-<div class="row">
-    <div class="col-sm-4 col-sm-offset-2">
-         <div class="panel panel-default">
-         <div class="panel-heading text-center"><h2><i class="icon-chevron-left"></i> Theme</h2></div>
-         <div class="panel-body text-center">
-            Software that makes a difference in the community.
-            <div class="row">&nbsp;</div>
-          </div>
-         </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="panel panel-default">
-      <div class="panel-heading text-center"><h2>Things to bring <i class="icon-chevron-right"></i></h2></div>
-      <div class="panel-body">
-        1)  Yourself (<i>required</i>)<br>
-        2)  Laptops (<i>pretty useful</i>)<br>
-        3)  Ethernet cables (<i>optional – WIFI will be available</i>)<br>
-        4)  Sleeping supplies (<i>optional – who needs to sleep anyway?</i>)
-        <div class="row">&nbsp;</div>
-      </div>
+    <div class="col-lg-4">
+      <center>
+      <h4><i class="fa fa-clock-o fa-4x"></i></h4>
+      <h3>24 hours...</h3>
+      <p>100+ students from all over Virginia</p>
+      <p>Sponsors will bring company representatives and engineers to collect participants’ resumes, judge the competition, and present career opportunities.</p>
+      </center>
     </div>
-  </div>
-</div>
 
-<div id="sec4" class="blurb">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h1>Contact Us</h1>
-        <h3>Any questions/suggestions/comments?</h3>
-        <h3>Shoot us an email <h3>
-        <h3>and we'll be sure to get back to you</h3>     
-      <div class="row">&nbsp;</div>
-        <a href="mailto:hackvirginia@virginia.edu" class="btn btn-default btn-lg">Email</a>
-        <p class="lead"></p>
+    <div class="col-lg-4">
+      <center>
+      <h4><i class="fa fa-trophy fa-4x"></i></h4>
+      <h3>Prizes!</h3>
+      <p>Compete with your peers for a chance to win valuable prizes.</p>
+      <p>Thousands of dollars in prizes will be awarded to top 3 teams. Additionally, there will be door prize giveaways!</p>
+      </center>
+    </div>
+
+    <div class="col-lg-4">
+      <center>
+      <h4><i class="fa fa-laptop fa-4x"></i></h4>
+      <h3>Proceeds support a local charity</h3>
+      <p class="text-center"><a href="http://computers4kids.net/"><b>Computers4Kids</b></a></p>
+      <p>Proceeds from the hackathon will support mentorship and development of computer skills for low income, middle and high school students.</p>
+      </center>
+    </div>
+
+  </div>
+
+  <hr>
+
+
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="panel panel-notdefault">
+        <div class="panel-heading text-center"><h5><i class="fa fa-chevron-left"></i> Setting</h5></div>
+        <div class="panel-body">
+          <div class="pull-left">
+            <h4 style="padding-right:15px;">
+              <i class="fa fa-calendar fa-2x"></i>
+            </h4>
+          </div>
+
+          <p>Start: <b>November 22</b><br>
+          End:   <b>November 23</b><br>
+          Location: Clemons library, University of Virginia</p>
+          <p>Free food, drinks, and coffee will be offered throughout the Hackathon.</p>
+        </div>
       </div>
     </div>
+
+    <div class="col-lg-6">
+      <div class="panel panel-notdefault">
+        <div class="panel-heading text-center"><h5>Theme <i class="fa fa-chevron-right"></i> </h5></div>
+        <div class="panel-body">
+          <div class="pull-right">
+            <h4>
+              <span class="fa-stack fa-lg">
+              <i class="fa fa-square-o fa-stack-2x"></i>
+              <i class="fa fa-rocket fa-stack-1x"></i>
+              </span>
+            </h4>
+          </div>
+
+          <center>
+          <p>The HackVirginia team challenges you to build software that makes a difference in the community. Whether that be a mobile app, a web application, or some other form of software, it will be judged based on its novelty, breadth, and potential beneficial impact on the community.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>
 
 
 <footer>
+  <div class="sponsorship">
+    <div class="row">
+      <div class="col-md-12">
+        <h4><i class="fa fa-chevron-left"></i> Our Sponsors / <i class="fa fa-chevron-right"></i></h4>
+      </div>
+    </div>
+    <hr>
+    <div>&nbsp;</div>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://www.capitalone.com/"><img src="img/capitalone_logo.png" width="275" height="200"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="http://aws.amazon.com/"><img src="img/AWS_logo.png" width="250" height="200"></a>
+      </div>
+      <div class="col-md-4">
+        <a href="http://www.willowtreeapps.com/"><img src="http://ww1.prweb.com/prfiles/2013/05/21/10757974/willowtreeapps_logo_vert.jpg" width="250" height="200"></a>
+      </div>
+    </div>
+    <div>&nbsp;</div>
+    <hr>
+    <div>&nbsp;</div>
+    <div class="row">
+      <div class="col-md-3">
+        <a href="http://google.com/"><img src="img/google logo-adapted.png" width="250" height="150"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="http://www.captechconsulting.com/"><img src="img/CapTech Logo.jpg" width="200" height="150"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="http://centerforopenscience.org/"><img src="img/Center for open science logo-adapted.png" width="250" height="150"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="http://eguva.com/"><img src="img/EG_UVA_Logo.png" width="275" height="150"></a>
+      </div>
+    </div>
+    <div>&nbsp;</div>
+    <hr>
+    <div>&nbsp;</div>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://github.com/"><img src="img/Github logo-adapted.png" width="250" height="125"></a>
+      </div>
+      <div class="col-md-6">
+        <a href="http://www.pj-networks.com/"><img src="img/pjn-logo-clean-600.jpg" width="250" height="125"></a>
+      </div>
+    </div>
+  </div>
+
+  <br><div id="sec1"></div><br>
+
+  </footer>
+
+  <div class="contact" style="background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <h4><i class="fa fa-chevron-left"></i> Contact Us / <i class="fa fa-chevron-right"></i></h4>
+          <hr>
+          <h6>Any questions, suggestions, or comments?</h6>
+          <h6>Shoot us an email and we'll be sure to get back to you.</h6>
+          <a href="mailto:hackvirginia@virginia.edu" class="btn c-btn">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
         <ul class="list-inline">
-          <li><i class="icon-facebook icon-2x"></i></li>
-          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><a href="https://www.facebook.com/pages/Hack-Virginia/572456182827970"><i class="fa fa-facebook fa-2x"></i></a></li>
+          <li><a href="https://twitter.com/hackvirginia"><i class="fa fa-twitter fa-2x"></i> </a></li>
         </ul>
         <hr>
-        <p>Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a>.<br>HackVirginia ©2013</p>
+        <p>Built with <i class="fa fa-heart-o"></i> at <a href="http://www.bootply.com">Bootply</a>.<br>HackVirginia ©2013</p>
       </div>
     </div>
   </div>
-</footer>
+
 
 <ul class="nav pull-right scroll-down">
   <li><a href="#" title="Scroll down"><i class="icon-chevron-down icon-3x"></i></a></li>
@@ -458,37 +455,30 @@ footer {
   <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
 </ul>
 
-        
-        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<!-- JavaScript jQuery code from Bootply.com editor -->
+ <script type='text/javascript'>
+    $(document).ready(function() {
+    /* smooth scrolling for scroll to top */
+    $('.scroll-top').click(function(){
+      $('body,html').animate({scrollTop:0},800);
+    })
 
+    /* smooth scrolling for scroll down */
+    $('.scroll-down').click(function(){
+      $('body,html').animate({scrollTop:$(window).scrollTop()+800},1000);
+    })
 
+    /* highlight the top nav as scrolling occurs */
+    $('body').scrollspy({ target: '#navbar' })
 
+    });
         
-        <!-- JavaScript jQuery code from Bootply.com editor -->
-        
-        <script type='text/javascript'>
-        
-        $(document).ready(function() {
-        
-            /* smooth scrolling for scroll to top */
-$('.scroll-top').click(function(){
-  $('body,html').animate({scrollTop:0},800);
-})
-/* smooth scrolling for scroll down */
-$('.scroll-down').click(function(){
-  $('body,html').animate({scrollTop:$(window).scrollTop()+800},1000);
-})
-
-/* highlight the top nav as scrolling occurs */
-$('body').scrollspy({ target: '#navbar' })
-
-        
-        });
-        
-        </script>
+</script>
+<!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -499,6 +489,6 @@ $('body').scrollspy({ target: '#navbar' })
   ga('send', 'pageview');
 
 </script>
-        
-    </body>
+                
+</body>
 </html>
