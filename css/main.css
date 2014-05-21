@@ -107,6 +107,15 @@ h6 {
   padding:25px;
 }
 
+.finished {
+  font-size:40px;
+  color:#0000ff;
+  border:5px solid black;
+  background-color:#fff;
+  width:25%;
+  margin:auto;
+}
+
 .info-block {
   height:200px;
   width:350px;
