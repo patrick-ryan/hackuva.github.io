@@ -33,7 +33,7 @@ h1 {
   margin-right:auto;
 
   border:5px ridge black;
-  background-image:url('img/title back.jpg');
+  background-image:url('../img/title back.jpg');
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -102,6 +102,7 @@ h6 {
 }
 
 .blurb {
+  background: url('../img/stripe.png') repeat center center fixed;
   background-color:#ffffff;
   padding:25px;
 }
@@ -124,13 +125,15 @@ footer {
   padding:25px;
 }
 
-.sponsorship {
+.sponsorship, .winners {
   color:#333;
   text-align:center;
-  margin-top:auto;
-  margin-bottom:auto;
-  padding-left:0px;
-  padding-right:50px;
+  padding:25px;
+}
+
+.places {
+  font-size:35px;
+  color:#ffffff;
 }
 
 .faq {
